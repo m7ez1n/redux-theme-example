@@ -23,12 +23,6 @@ const themeReducer = (
         selectedTheme: state.selectedTheme === "dark" ? "light" : "dark",
       };
 
-    case ThemeActionKeys.GET_THEME:
-      return {
-        ...state,
-        selectedTheme: state.selectedTheme,
-      };
-
     default: {
       return state;
     }
